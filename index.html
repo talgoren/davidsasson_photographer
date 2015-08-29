@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/normalize.css">  
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>David Sasson | Photographer</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- 	<script>
+		$(document).ready(function(){
+		$('#slider1_container').hide().fadeIn(3000);             // it doesnt work
+	});
+	</script>	 -->
+</head>
+
+<body>
+	<script type="text/javascript" src="slider/js/jquery-1.9.1.min.js"></script>
+    <!-- use jssor.slider.mini.js (40KB) instead for release -->
+    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="slider/js/jssor.js"></script>
+    <script type="text/javascript" src="slider/js/jssor.slider.js"></script>
+    <script>
+
+        jQuery(document).ready(function ($) {
+            var options = {
+
+                $AutoPlay: true,                                   //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $DragOrientation: 1                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+     
+		
+			 //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                if (parentWidth)
+                    jssor_slider1.$ScaleWidth(Math.min(parentWidth, 1280));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+		});
+    </script>
+	<header>
+		<a href="index.html" id="logo">
+		<h2>David Sasson | Photographer</h2>
+		</a>
+		<nav>
+			<ul>
+			  <li><a href="gallery.html">Gallery</a></li>
+			  <li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div>
+
+		<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 600px;
+			height: 300px;">
+			<!-- Slides Container -->
+			<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 600px; height: 300px;
+				overflow: hidden;">
+				<div><img u="image" src="img/img_1.jpg" /></div>
+				<div><img u="image" src="img/img_2.jpg" /></div>
+				<div><img u="image" src="img/img_3.jpg" /></div>
+				<div><img u="image" src="img/img_4.jpg" /></div> 
+			</div>
+		</div>
+		<p id="p1">
+		Hi,  I am a professional photographer based in Tel Aviv, ISRAEL. 
+		Feel free to check out the gallery tab and give me some feedbacks. At the bottom of the page you'll find links to my instagram and facebook pages.
+		peace & love. 
+		</p>
+		<footer>
+			<a href="https://instagram.com/dudipanda11/"><img src="img/instagram-wrap.png" alt="instagram logo" class="social-icon" ></a>
+			<a href="https://www.facebook.com/DavidSassonPhotographer?fref=tsl"><img src="img/facebook-icon.png" alt="facebook logo" class="social-icon"></a>
+			<p>&copy; 2015 David Sasson Photography</p>
+		</footer>
+	</div>	
+</body>
+</html>

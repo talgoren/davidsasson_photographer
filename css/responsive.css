@@ -1,0 +1,91 @@
+@media screen and (min-width: 480px) {
+  
+  
+  /*******************
+  TWO COLUMN LAYOUT_CONTACT PAGE
+  ********************/
+  
+  #primary {
+    width: 50%;
+    float: left;
+  }
+  #secondary {
+    width: 40%;
+    float: right;
+  }
+  
+  
+  /*******************
+  PAGE : gallery
+  ********************/
+  
+  #gallery li {
+    width: 45% ; 
+
+  }
+  
+ /*  #gellery li:nth-child(1n) {
+    clear: left;
+  }  */
+
+
+/* #g1  { display: table-footer-group; }
+#g2 { display: table-header-group; } */
+
+#g1 #g2 {
+  /* Prevent vertical gaps */
+  line-height: 0;
+   
+  -webkit-column-count: 3;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    3;
+  -moz-column-gap:      0px;
+  column-count:         3;
+  column-gap:           0px;  
+}
+
+#g1 img #g2 img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+
+ @media screen and (min-width: 660px) {
+
+    /******************
+  HEADER_ makes the header and navigation float into one line
+  ********************/
+  nav {
+    float: right;
+   /*  font-size: 1.125em; */
+    margin-right: 5%;
+    text-align: right;
+    width: 30%;
+	padding-top : 22px ; 
+  }
+  
+  #logo {
+	float: left;  
+    margin-left: 5%;
+    text-align: left;
+	width : 55% ; 
+  }
+  
+   #gallery li {
+    width: 28.3333% ; 
+  }
+  
+  #slider1_container {
+	  overflow:auto ;
+  }
+  
+header {
+	  overflow : auto ;
+  }
+ 
+ }
+ 
+  
+ 
+

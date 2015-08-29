@@ -1,0 +1,164 @@
+
+header {
+	text-align : center ; 
+	margin: 0 0 ; 
+}
+
+body {
+	margin : 0px auto ;
+	background-color : black ;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration:none;
+}
+
+h2 {
+	margin-bottom : 0px ;
+	margin-top : 0px ;
+	padding: 20px ; 
+}
+	
+nav {
+  text-align: center;
+  padding: 15px ;
+  margin-bottom : 20px ;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+  }
+
+nav li {
+ display: inline-block;
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
+}
+
+#p1 {
+	font-size : 0.9em ; 
+	margin : 40px 20px ;
+	padding : 5% 5% ;
+	color : gray ;
+}
+
+/************************************************************************************* footer */
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  color: #CCC;
+  
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+
+/************************************************************************************* gallery */
+
+#gallery {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#gallery li{
+	float : left ; 
+	margin: 0.5% ; 
+}
+
+.gallery_p {
+	color : #00D8FF ;
+	margin : 15px  ;
+}
+
+/************************************************************************************** contact */
+
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 20px auto 30px;
+  border-radius: 60px;
+    
+}
+
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+  }
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/mail.png');
+}
+
+
+/************************************************************************************** coloros */
+
+
+header {
+	color : gray ; 
+	
+}
+
+#logo {
+	color : gray ; 
+}
+/* nav backgroung on mobile */
+
+
+nav a {
+	color : gray ;
+}
+
+nav a.selected, nav a:hover {
+  color: #CCFFFF;
+}
+
+h3 {
+	color : gray ;
+	font-size : 1em ;
+}
+
+p {
+	color : gray ;
+}
+
+.contact-info a {
+	color : #4d69a8 ; 
+}
